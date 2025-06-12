@@ -1,0 +1,87 @@
+
+/*
+ * 下拉框及下拉弹出框的样式重写
+ */
+.el-select{
+    line-height: @inputSize;
+    width: 100%;
+    .el-input{
+      .el-input__inner{
+        &:focus{
+          border-color: @inputBorderDefaultColor;
+        }
+      }
+      &.is-focus{
+        .el-input__inner{
+          border: 2px solid @inputHoverColor;
+        }
+      }
+    }
+    .el-select__tags-text{
+      font-size: 14px;
+      color: #3c3c3c;
+    }
+    .el-tag__close{
+      float: right;
+    }
+    &:not(.height-auto) {
+      .el-input{
+        width: 100%;
+          .el-input__inner{
+              height: @inputSize !important;
+          }
+          // IE 9 箭头兼容
+          .el-select__caret{
+              -webkit-transform: rotateZ(180deg);
+              transform: rotate(180deg);
+              transform: rotateZ(180deg);
+              &.is-reverse{
+                  -webkit-transform: rotateZ(0deg);
+                  transform: rotate(0deg);
+                  transform: rotateZ(0deg);
+              }
+          }
+      }
+      // 多选时鼠标悬停显示所有已选项功能
+      .el-select__tags{
+          overflow: hidden;
+          white-space: nowrap;
+          >span{
+              display: block;
+              overflow: hidden;
+              // text-overflow: ellipsis;
+
+              .el-tag{
+                display: inline-block;
+              }
+          }
+          &:hover{
+              overflow: auto;
+              max-width: none !important;
+              >span{
+                  overflow: auto;
+              }
+          }
+      }
+    }
+}
+
+.el-select-dropdown, .el-select-dropdown.is-multiple{
+    .el-select-dropdown__item{
+      font-size: 14px;
+        &.hover{
+            background-color: @selectItemHoverColor;
+        }
+        &.selected, &.selected.hover{
+            background-color: @selectItemSelectedColor;
+            color: @selectItemSelectedFontColor;
+        }
+    }
+}
+.el-select-dropdown{
+  .el-scrollbar{
+    .el-scrollbar__bar.is-vertical{
+      opacity: 1
+    }
+  }
+}

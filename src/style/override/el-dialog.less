@@ -1,0 +1,71 @@
+
+/*
+ * dialog弹出框的样式重写
+ */
+/*消息提示*/
+.el-dialog{
+  width: 440px;
+  border-radius: 4px;
+  border: solid 1px #e4e4e4;
+  &.modal-box {
+    width: 550px;
+    .el-radio {
+      margin-right: 0;
+    }
+  }
+  .el-dialog__header{
+    padding: 12px 20px 8px;
+    background: #f6f6f6;
+    border-bottom: solid 1px #dfe2e5;
+    font-size: @baseFontSize;
+    color: @baseFontColor;
+    .el-dialog__headerbtn{
+      top: 12px;
+    }
+  }
+  .el-dialog__body{
+    padding: 24px 20px;
+    font-size: @baseFontSize;
+    .dialog_icon{
+      display: inline-block;
+      margin: 25px 12px 0 0;
+      vertical-align: top;
+      .iconfont{
+        font-size: 36px;
+        color: #1991ac;
+      }
+    }
+    .dialog_content{
+      display: inline-block;
+      width: 336px;
+      line-height: 30px;
+      color: @baseFontColor;
+    }
+  }
+  .el-dialog__footer{
+    .el-button{
+      width: 96px;
+      font-size: @baseFontSize;
+      font-weight: normal;
+      &.el-button--primary{
+        background: #235784;
+        border-color: #235784;
+        color: #fff;
+        &:hover {
+          background: #235784;
+          border-color: #235784;
+          color: #fff;
+        }
+      }
+      &.el-button--default{
+        border-color: #c4c6cf;
+        color: #666666;
+        &:hover {
+          border-color: @buttonColor;
+          color: @buttonColor;
+          background-color: #ecf5ff;
+        }
+      }
+    }
+  }
+}

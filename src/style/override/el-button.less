@@ -1,0 +1,114 @@
+
+/*
+ * 按钮的样式重写
+ */
+.el-button{
+    border-radius: 2px;
+    padding: 9px 0;
+    width: 120px;
+    //line-height: @buttonSize - 6px;
+    font-size: @baseFontSize;
+    &.el-button--default{
+        border-color: @buttonColor;
+        border-width: 1px;
+        color: @buttonColor;
+        font-size: @baseFontSize;
+      &:hover {
+        border-color: @buttonColor;
+        color: @buttonColor;
+        background-color: #ecf5ff;
+      }
+    }
+    &.el-button--info{
+        border-width: 2px;
+    }
+    &.el-button--mini{
+        padding: 0;
+        line-height: @inputSize - 4px;
+        font-size: @baseFontSize;
+    }
+    &.el-button--primary{
+        background-color: @buttonColor;
+        color: @activeFontColor;
+        border-color: @buttonColor;
+        font-size: @baseFontSize;
+      &:hover {
+        background-color: @buttonColor;
+        color: @activeFontColor;
+        border-color: @buttonColor;
+      }
+      &:focus {
+        background-color: @buttonColor;
+        color: @activeFontColor;
+        border-color: @buttonColor;
+      }
+    }
+    &.el-button--small {
+       padding: 0;
+      &.is-round {
+        padding: 0;
+      }
+    }
+    &.is-disabled{
+        border-color: @buttonDisabledBorderColor;
+        color: @buttonDisabledColor;
+      &:hover{
+        border-color: @buttonDisabledBorderColor;
+        color: @buttonDisabledColor;
+        background: #fff;
+      }
+      &.el-button--primary{
+        border-color: @buttonDisabledBorderColor;
+        background: @buttonDisabledBorderColor;
+        color: #fff;
+      }
+      &.el-button--text {
+        border-color: transparent;
+      }
+    }
+  .iconfont{
+    margin-right: 3px;
+  }
+}
+.el-button--mini {
+  padding: 0;
+  &.is-round {
+    padding: 0;
+  }
+}
+.el-button--text{
+  line-height: 23px;
+  width: auto;
+  font-size: @baseFontSize;
+  color:  @buttonColor;
+  &:hover{
+    color: @buttonColor;
+  }
+}
+//按钮居中
+.bottom_button {
+  margin: 12px 0 36px 0;
+  text-align: center;
+}
+// 提示按钮样式
+.el-message-box__btns {
+  .el-button {
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    font-size: @baseFontSize;
+  }
+}
+// MessageBox 弹框 按钮样式单独处理
+.message_box_style {
+  .el-message-box__btns {
+    .el-button {
+      padding: 0 4px;
+      width: auto;
+    }
+  }
+}
+
+.el-button.short_btn{
+  width: 80px;
+}

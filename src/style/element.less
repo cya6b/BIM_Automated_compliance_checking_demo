@@ -1,0 +1,25 @@
+@import 'variables.less';
+.is-primary() {
+    color: white;
+    color: @buttonColor;
+    &:hover {
+        color: @buttonHoverColor;
+    }
+}
+.scrollbar() {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #DCDEE3;
+        border-radius: 10px;
+        -webkit-box-shadow: inset1px1px0rgba(0,0,0,.1);
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: transparent;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}

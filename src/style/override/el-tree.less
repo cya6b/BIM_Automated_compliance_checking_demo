@@ -1,0 +1,45 @@
+.el-tree{
+    @nodeActiveColor: lighten(@buttonColor, 25%);
+    @nodeActiveAndHoverColor: lighten(@buttonColor, 35%);
+    .el-tree-node{
+      font-size: @baseFontSize;
+      color: @baseFontColor;
+        &.is-current{
+            >.el-tree-node__content{
+                background-color: @tableHoverBg !important;
+                color: @baseFontColor !important;
+                .el-tree-node__expand-icon{
+                    &.is-leaf{
+                        color: transparent;
+                    }
+                    color: @baseFontColor;
+                }
+                .tree-check-box{
+                  .el-checkbox__label{
+                    color: @baseFontColor;
+                  }
+                }
+            }
+        }
+        .el-tree-node__content{
+            height: auto;
+            &:hover{
+                background-color: @tableHoverBg;
+                color: @baseFontColor;
+                .el-tree-node__expand-icon{
+                    &.is-leaf{
+                        color: transparent;
+                    }
+                    color: @baseFontColor;
+                }
+            }
+          .tree-check-box{
+            .el-checkbox__label{
+              font-size: @baseFontSize;
+              color: @baseFontColor;
+              font-weight: normal;
+            }
+          }
+        }
+    }
+}
