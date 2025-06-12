@@ -1,18 +1,18 @@
-### 项目介绍
-BIM模型审查系统的web网页端
+### Introduce
+BIM model checking system for web pages
 
-支持gfc格式模型文件的智能审查及审查结果查看校核
+Support intelligent checking and result viewing and calibration of BIM model files.
 
-### 编译与运行
-#### 编译环境
- windows 7 及以上版本操作系统
+### Compile & Run
+#### compiling environment
+ Windows 7 and above operating systems
  node v16.17.0
 
-##### 安装基础依赖组件
+##### Installation of Basic Dependencies
 node
 npm
 
-#### 编译步骤
+#### Compile Steps
 ``` bash
 # install dependencies
 npm install
@@ -24,16 +24,23 @@ npm run build
 npm run build --report
 ```
 
-#### 运行环境
-Windows 7 及以上版本操作系统
-chrome 83及以上版本浏览器
+#### Operating environment
+Windows 7 and above operating systems
+chrome 83 and higher
 
-#### 运行步骤
+#### Operational procedure
 ``` bash
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost
 npm run dev
 ```
+### Web page presentation
+Account: admin
+Password: 123456
+Verification Code: abcd
 
-### License
-MIT
+### Web page presentation
+![image](https://github.com/user-attachments/assets/a30c32f6-76db-4aa3-baf1-3791cd81be92)
+![image](https://github.com/user-attachments/assets/597c4057-9787-4802-b9cd-92cd4e3ca082)
+
+
