@@ -1,9 +1,9 @@
-### Introduce
+# Introduce
 BIM model checking system for web pages
 
 Support intelligent checking and result viewing and calibration of BIM model files.
 
-### Compile & Run
+# Compile & Run
 #### compiling environment
  Windows 7 and above operating systems
  node v16.17.0
@@ -34,7 +34,7 @@ chrome 83 and higher
 # serve with hot reload at localhost
 npm run dev
 ```
-### Web page presentation
+### Login Steps
 Account: admin
 Password: 123456
 Verification Code: abcd
