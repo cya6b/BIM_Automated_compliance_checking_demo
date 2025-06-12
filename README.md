@@ -40,7 +40,9 @@ Password: 123456
 Verification Code: abcd
 
 ### Web page presentation
+(1)
 ![image](https://github.com/user-attachments/assets/a30c32f6-76db-4aa3-baf1-3791cd81be92)
+(2)
 ![image](https://github.com/user-attachments/assets/597c4057-9787-4802-b9cd-92cd4e3ca082)
 
 
