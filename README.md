@@ -24,22 +24,22 @@ npm run build
 npm run build --report
 ```
 
-#### Operating environment
+# Operating environment
 Windows 7 and above operating systems
 chrome 83 and higher
 
-#### Operational procedure
+# Operational procedure
 ``` bash
 
 # serve with hot reload at localhost
 npm run dev
 ```
-### Login Steps
+# Login Steps
 Account: admin
 Password: 123456
 Verification Code: abcd
 
-### Web page presentation
+# Web page presentation
 (1)
 ![image](https://github.com/user-attachments/assets/a30c32f6-76db-4aa3-baf1-3791cd81be92)
 (2)
